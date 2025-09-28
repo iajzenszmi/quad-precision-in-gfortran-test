@@ -9,3 +9,9 @@ Prints precision/range info
 Does a few high-precision calculations (π, e, a tiny root via Newton)
 
 Compares quad vs double to show the benefit
+
+gfortran -O2 -std=f2008 -ffree-form quadtest.f08 -o quadtest
+./quadtest
+
+if necessary 
+gfortran -O2 -std=f2008 -ffree-form quadtest.f90 -o quadtest -lquadmath
